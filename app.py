@@ -28,6 +28,7 @@ fdf = fdf.reset_index()
 fdf['brand'] = fdf['tv'].apply(lambda x: brand_rename[x[:2].lower()])
 
 app = dash.Dash()
+server = app.server
 
 app.layout = html.Div(children=[
 
