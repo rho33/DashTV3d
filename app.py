@@ -140,9 +140,9 @@ def abc_on_plot(eq1, eq2):
     z1 = eval(eq1)
     z2 = eval(eq2)
     surface = go.Surface(x=x, y=y, z=z1, surfacecolor=np.full(z1.shape, -100), colorscale='Greys', showlegend=False,
-                         showscale=False, hoverinfo='skip', opacity=.75)
+                         showscale=False, hoverinfo='skip', opacity=.87)
     surface2 = go.Surface(x=x, y=y, z=z2, surfacecolor=np.full(z2.shape, -100), colorscale='Blues', showlegend=False,
-                          showscale=False, hoverinfo='skip', opacity=.75)
+                          showscale=False, hoverinfo='skip', opacity=.87)
 
     fig.add_trace(surface)
 
@@ -193,10 +193,10 @@ def abc_off_plot(eq1, eq2):
     z2 = eval(eq2)
 
     surface1 = go.Surface(x=x, y=y, z=z1,
-                         surfacecolor=np.full(z1.shape, -100), colorscale='Greys', opacity=.75,
+                         surfacecolor=np.full(z1.shape, -100), colorscale='Greys', opacity=.87,
                          showlegend=False, showscale=False, hoverinfo='skip')
     surface2 = go.Surface(x=x, y=y, z=z2,
-                         surfacecolor=np.full(z2.shape, -100), colorscale='Blues', opacity=.75,
+                         surfacecolor=np.full(z2.shape, -100), colorscale='Blues', opacity=.87,
                          showlegend=False, showscale=False, hoverinfo='skip')
 
     fig.add_trace(surface1)
